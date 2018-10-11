@@ -33,12 +33,12 @@
 }
 
 .main-page{
-  background-color: #FFE4B5;
-  color: gray;
+  background-color: #2f2f2f;
+  color: white;
 }
 
 .nav-item{
-  color: darkgray;
+  color: white;
 }
 #root .left-sidebar {
   position: fixed;
