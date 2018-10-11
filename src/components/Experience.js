@@ -34,6 +34,12 @@ class Experience extends Component {
                         </div>
                         <div className="col-8">
                             <div>
+                                <b>{this.props.experiences[this.props.selectedExp].title}</b>
+                            </div>
+                            <div>
+                                <i>{this.props.experiences[this.props.selectedExp].location}</i>
+                            </div>
+                            <div>
                                 {this.props.experiences[this.props.selectedExp].work.map(function (work) {
                                     return <li>{work}</li>
                                 })}

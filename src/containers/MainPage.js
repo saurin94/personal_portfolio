@@ -12,7 +12,9 @@ import Contact from "../components/Contact";
 
 let experience = [
     {
-        title: "stubhub",
+        company: "StubHub",
+        title: 'Graduate Software Co-op',
+        location: 'Boston, MA',
         work: [
             "Contributed to feature development for Search Engine Marketing team to build aggregated data sets using Parallel Data Processing [Hadoop, Hive, Scala and Spark] for campaigns, ads and keywords",
             "Built data sets for automated keyword bidding system over 48 countries with language specific content for globalization of data",
@@ -21,7 +23,9 @@ let experience = [
             "Responsible for creating data sets and content pertaining to keywords and ads for SITE-LINKS which are formed using Google's DoubleClick"]
     },
     {
-        title: "TA",
+        company: "Northeastern University",
+        title: 'Teaching Assistant',
+        location: 'Boston, MA',
         work: [
             "Teaching Assistant for Course CS4100 - Foundations of Artificial Intelligence\n" +
             "Contributed to the development of teaching materials for the subject “Foundations of AI”",
@@ -29,14 +33,18 @@ let experience = [
             "Automated programming assignment check using Python and GitHub API"]
     },
     {
-        title: "CTO",
+        company: "Rent N'Get",
+        title: 'Chief Technology Officer',
+        location: 'Mumbai, India',
         work: [
             "C.T.O and Co-Founder at Rent N' Get",
             "Identified opportunity to develop a peer to peer (P2P) renting application",
             "Assisted developers on developing Rent N’ Get Android App using Java and AWS services including EC2, Route53, S3"]
     },
     {
-        title: "Programmer",
+        company: "GameEon",
+        title: 'Programmer and Artist',
+        location: 'Mumbai, India',
         work: [
             "Contributed as a programmer for developing games for Android OS using “Unity” game engine (Language: JavaScript/C#) ",
             "Assisted on Web Projects to develop websites as per clients requirements using WordPress. "
