@@ -30,3 +30,59 @@
     transform: rotate(360deg);
   }
 }
+
+.main-page{
+  background-color: #2f2f2f;
+  color: darkgray;
+  /*text-shadow: 0 0 1px white, 0 0 10px white, 0 0 20px darkgray, 0 0 30px darkgray, 0 0 40px darkgray, 0 0 55px darkgray, 0 0 75px darkgray;*/
+}
+
+.nav-item{
+  color: darkgray;
+}
+#root .left-sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 50px;
+  height: auto;
+  /*border: 1px solid;*/
+  /*left: 0px;*/
+  /*right: 90%;*/
+}
+
+#root .right-sidebar {
+  position: fixed ;
+  right: 0;
+  height: auto;
+  bottom: 200px;
+}
+
+.rightbar {
+  display: block;
+  transform: rotate(90deg);
+  overflow: visible;
+}
+
+.myName{
+  font-size: 70px;
+  font-family: Courier;
+}
+
+.saurin-img{
+  border: 1px solid;
+  padding: 1px;
+  box-shadow: 10px 20px 18px #888888;
+}
+
+.content{
+  height: 100vh;
+}
+
+.side-icons{
+  color: darkgray;
+}
+
+
+@media ( max-width: 800px ) {
+  #exp ul { display: inline-flex; }
+}
