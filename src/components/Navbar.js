@@ -1,12 +1,28 @@
 import React, {Component} from 'react';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-// import '../../node_modules/jquery/dist/jquery.min.js';
 
 class Navbar extends Component {
+    constructor(props) {
+        super(props);
+        this.toggleNavbar = this.toggleNavbar.bind(this);
+        this.state = {
+            collapsed: true,
+        };
+    }
+    toggleNavbar() {
+        this.setState({
+            collapsed: !this.state.collapsed,
+        });
+    }
+
     render() {
+        const collapsed = this.state.collapsed;
+        const classOne = collapsed ? 'collapse navbar-collapse col-sm-11 col-12 p-0' : 'collapse navbar-collapse col-sm-11 col-12 p-0 show';
+        const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right';
         return (
             <nav className="navbar navbar-expand-md navbar-dark bg-dark" id={"navbar"}>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                <button onClick={this.toggleNavbar} className={`${classTwo}`} type="button"
+                        data-toggle="collapse" data-target="#navbarNavDropdown"
                         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle nav">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -21,7 +37,7 @@ class Navbar extends Component {
                         </div>
                     </div>
                 </ul>
-                <div className="collapse navbar-collapse col-sm-11 col-12 p-0" id="navbarNavDropdown">
+                <div className={`${classOne}`} id="navbarNavDropdown">
                     <ul className="navbar-nav flex-column flex-sm-row flex-wrap">
                         <li className="nav-item d-flex active" onClick={() => this.scrollToPage("about")}>
                             <b className="mt-2">a.</b>
