@@ -19,12 +19,12 @@ class Experience extends Component {
 
     render() {
         return (
-            <div className="content col-8 offset-2 text-left mt-sm-2 mt-0" id={"exp"}>
+            <div className="content col-lg-8 col-12 offset-lg-2 text-left mt-sm-2 mt-0" id={"exp"}>
                 <div className="row">
                     <h1 className={"text-right"}>b. Experience</h1>
                     <br/>
-                    <div className="row">
-                        <div className="col-lg-4">
+                    <div className="row p-5">
+                        <div className="col-lg-4 col-12">
                             <ul>
                                 <li onClick={() => this.props.onSelectExperience(0)}>StubHub</li>
                                 <li onClick={() => this.props.onSelectExperience(1)}>Teaching Assistant (A.I)</li>
@@ -32,9 +32,14 @@ class Experience extends Component {
                                 <li onClick={() => this.props.onSelectExperience(3)}>Programmer and Artist</li>
                             </ul>
                         </div>
-                        <div className="col-8">
-                            <div>
+                        <div className="col-lg-8 col-md-8 col-12">
+                            <div className="row">
+                            <div className={"col-6"}>
                                 <b>{this.props.experiences[this.props.selectedExp].title}</b>
+                            </div>
+                                <div className="col-6">
+                                    {this.props.experiences[this.props.selectedExp].timeline}
+                                </div>
                             </div>
                             <div>
                                 <i>{this.props.experiences[this.props.selectedExp].location}</i>

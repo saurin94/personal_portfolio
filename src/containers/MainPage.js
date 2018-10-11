@@ -14,6 +14,7 @@ let experience = [
     {
         company: "StubHub",
         title: 'Graduate Software Co-op',
+        timeline: 'January 2018 - August 2018',
         location: 'Boston, MA',
         work: [
             "Contributed to feature development for Search Engine Marketing team to build aggregated data sets using Parallel Data Processing [Hadoop, Hive, Scala and Spark] for campaigns, ads and keywords",
@@ -25,6 +26,7 @@ let experience = [
     {
         company: "Northeastern University",
         title: 'Teaching Assistant',
+        timeline: 'September 2017 - December 2017',
         location: 'Boston, MA',
         work: [
             "Teaching Assistant for Course CS4100 - Foundations of Artificial Intelligence\n" +
@@ -35,6 +37,7 @@ let experience = [
     {
         company: "Rent N'Get",
         title: 'Chief Technology Officer',
+        timeline: 'August 2016 - February 2017',
         location: 'Mumbai, India',
         work: [
             "C.T.O and Co-Founder at Rent N' Get",
@@ -44,6 +47,7 @@ let experience = [
     {
         company: "GameEon",
         title: 'Programmer and Artist',
+        timeline: 'September 2014 - March 2015',
         location: 'Mumbai, India',
         work: [
             "Contributed as a programmer for developing games for Android OS using “Unity” game engine (Language: JavaScript/C#) ",

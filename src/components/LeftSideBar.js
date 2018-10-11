@@ -12,21 +12,21 @@ class LeftSideBar extends Component {
                 <div className="row mt-5"></div>
                 <div className="row mt-5"></div>
                 <div className="item-1 mt-1">
-                    <a href={"https://www.linkedin.com/in/saurin94/"} className={"side-icons"}><i
+                    <a href={"https://www.linkedin.com/in/saurin94/"} className={"side-icons"} target="_blank"><i
                         className="fab fa-linkedin fa-2x"></i></a>
                 </div>
                 <div className="item-1 mt-5">
-                    <a href={"https://www.facebook.com/sau94"} className={"side-icons"}>
+                    <a href={"https://www.facebook.com/sau94"} className={"side-icons"} target="_blank">
                         <i className="fab fa-facebook-square fa-2x"></i>
                     </a>
                 </div>
                 <div className="item-1 mt-5">
-                    <a href={"https://github.com/saurin94"} className={"side-icons"}>
+                    <a href={"https://github.com/saurin94"} className={"side-icons"} target="_blank">
                         <i className="fab fa-github fa-2x"></i>
                     </a>
                 </div>
                 <div className="item-1 mt-5">
-                    <a href={"https://www.instagram.com/saurin94/"} className={"side-icons"}>
+                    <a href={"https://www.instagram.com/saurin94/"} className={"side-icons"} target="_blank">
                         <i className="fab fa-instagram fa-2x"></i>
                     </a>
                 </div>

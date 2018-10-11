@@ -47,14 +47,14 @@ let projects =
 class Projects extends Component {
     render() {
         return (
-            <div className="content col-8 offset-2 text-left" id={"project"}>
+            <div className="content col-lg-8 col-12 offset-lg-2 text-left" id={"project"}>
                 <div className="row">
                     <h1>c. Projects</h1>
 
                     <div className="row">
                         {projects.map(function (project) {
                             return (
-                                <div className="col-4 mt-1 my-1">
+                                <div className="col-lg-4 col-md-3 col-12 mt-1 my-1">
                                     <div className="card text-white bg-dark text-center p-0 h-100">
                                         <div className={"card-header p-1"}> {project.title} </div>
                                         <div className="card-body">
