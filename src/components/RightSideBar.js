@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../../node_modules/jquery/dist/jquery.min.js';
-// import '../../node_modules/bootstrap/dist/js/bootstrap.min.js';
 
 class RightSideBar extends Component {
     render() {
         return (
-            <div className="right-sidebar col-1">
+            <div className="right-sidebar col-lg-1 col-md-1 d-none d-md-block">
                 <div className="item-1 vertical-bar">
                 </div>
                 <div className="row mt-5"></div>

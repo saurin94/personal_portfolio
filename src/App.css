@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  /*text-align: center;*/
+  /*overflow: hidden;*/
 }
 
 .App-logo {
@@ -34,7 +35,6 @@
 .main-page{
   background-color: #2f2f2f;
   color: darkgray;
-  /*text-shadow: 0 0 1px white, 0 0 10px white, 0 0 20px darkgray, 0 0 30px darkgray, 0 0 40px darkgray, 0 0 55px darkgray, 0 0 75px darkgray;*/
 }
 
 .nav-item{
@@ -45,9 +45,6 @@
   left: 0;
   bottom: 50px;
   height: auto;
-  /*border: 1px solid;*/
-  /*left: 0px;*/
-  /*right: 90%;*/
 }
 
 #root .right-sidebar {
@@ -74,8 +71,8 @@
   box-shadow: 10px 20px 18px #888888;
 }
 
-.content{
-  height: 100vh;
+.row .content{
+  min-height: 100vh;
 }
 
 .side-icons{
@@ -83,6 +80,8 @@
 }
 
 
-@media ( max-width: 800px ) {
-  #exp ul { display: inline-flex; }
+.arrow-up{
+  position: fixed;
+  bottom: 40px;
+  right: 135px;
 }

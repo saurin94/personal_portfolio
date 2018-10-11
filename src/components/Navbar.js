@@ -1,33 +1,42 @@
 import React, {Component} from 'react';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import '../../node_modules/jquery/dist/jquery.min.js';
-// import '../../node_modules/bootstrap/dist/js/bootstrap.min.js';
+// import '../../node_modules/jquery/dist/jquery.min.js';
 
 class Navbar extends Component {
     render() {
         return (
-            <nav className="navbar navbar-expand-lg">
-                <span className="navbar-brand">Saurin Shah</span>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <nav className="navbar navbar-expand-md navbar-dark bg-dark" id={"navbar"}>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle nav">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <b className="mt-2">a.</b>
-                        <li className="nav-item active test1" onClick={() => this.scrollToPage("about")} to="test1" spy={true} smooth={true} duration={500}>
+                <ul className="navbar-nav col-lg-1 col-md-1">
+                    <div className="col-12">
+                        <div className="row">
+                            <li className="nav-item col-sm-12 col-9">
+                                <div className="row">
+                                    Saurin Shah
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+                <div className="collapse navbar-collapse col-sm-11 col-12 p-0" id="navbarNavDropdown">
+                    <ul className="navbar-nav flex-column flex-sm-row flex-wrap">
+                        <li className="nav-item d-flex active" onClick={() => this.scrollToPage("about")}>
+                            <b className="mt-2">a.</b>
                             <span className="nav-link">About<span className="sr-only">(current)</span></span>
                         </li>
-                        <b className="mt-2 ml-2">b.</b>
-                        <li className="nav-item" onClick={() => this.scrollToPage("exp")}>
+                        <li className="nav-item d-flex" onClick={() => this.scrollToPage("exp")}>
+                            <b className="mt-2 ml-2">b.</b>
                             <span className="nav-link">Experience</span>
                         </li>
-                        <b className="mt-2 ml-2">c.</b>
-                        <li className="nav-item" onClick={() => this.scrollToPage("project")}>
+                        <li className="nav-item d-flex" onClick={() => this.scrollToPage("project")}>
+                            <b className="mt-2 ml-2">c.</b>
                             <span className="nav-link">Projects</span>
                         </li>
-                        <b className="mt-2 ml-2">d.</b>
-                        <li className="nav-item" onClick={() => this.scrollToPage("contact")}>
+                        <li className="nav-item d-flex" onClick={() => this.scrollToPage("contact")}>
+                            <b className="mt-2 ml-2">d.</b>
                             <span className="nav-link">Contact</span>
                         </li>
                     </ul>

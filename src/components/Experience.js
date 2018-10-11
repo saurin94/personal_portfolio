@@ -1,21 +1,9 @@
 import React, {Component} from 'react';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../../node_modules/jquery/dist/jquery.min.js';
-// import '../../node_modules/bootstrap/dist/js/bootstrap.min.js';
 import '../../node_modules/font-awesome/css/font-awesome.min.css';
 
 class Experience extends Component {
-    constructor(props) {
-        super(props);
-        console.log("Experience -> ", props.experiences);
-    }
-
-    selectExperience = (index) => {
-        console.log(index);
-        this.props.onSelectExperience(index)
-
-    };
-
 
     render() {
         return (
@@ -23,31 +11,33 @@ class Experience extends Component {
                 <div className="row">
                     <h1 className={"text-right"}>b. Experience</h1>
                     <br/>
-                    <div className="row p-5">
-                        <div className="col-lg-4 col-12">
-                            <ul>
-                                <li onClick={() => this.props.onSelectExperience(0)}>StubHub</li>
-                                <li onClick={() => this.props.onSelectExperience(1)}>Teaching Assistant (A.I)</li>
-                                <li onClick={() => this.props.onSelectExperience(2)}>Co-Founder / C.T.O</li>
-                                <li onClick={() => this.props.onSelectExperience(3)}>Programmer and Artist</li>
-                            </ul>
-                        </div>
-                        <div className="col-lg-8 col-md-8 col-12">
-                            <div className="row">
-                            <div className={"col-6"}>
-                                <b>{this.props.experiences[this.props.selectedExp].title}</b>
+                    <div className="col-12 p-5">
+                        <div className="row">
+                            <div className="col-lg-4 col-12">
+                                <ul>
+                                    <li onClick={() => this.props.onSelectExperience(0)}>StubHub</li>
+                                    <li onClick={() => this.props.onSelectExperience(1)}>Teaching Assistant (A.I)</li>
+                                    <li onClick={() => this.props.onSelectExperience(2)}>Co-Founder / C.T.O</li>
+                                    <li onClick={() => this.props.onSelectExperience(3)}>Programmer and Artist</li>
+                                </ul>
                             </div>
-                                <div className="col-6">
-                                    {this.props.experiences[this.props.selectedExp].timeline}
+                            <div className="col-lg-8 col-md-8 col-12">
+                                <div className="row">
+                                    <div className={"col-6"}>
+                                        <b>{this.props.experiences[this.props.selectedExp].title}</b>
+                                    </div>
+                                    <div className="col-6">
+                                        {this.props.experiences[this.props.selectedExp].timeline}
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <i>{this.props.experiences[this.props.selectedExp].location}</i>
-                            </div>
-                            <div>
-                                {this.props.experiences[this.props.selectedExp].work.map(function (work) {
-                                    return <li>{work}</li>
-                                })}
+                                <div>
+                                     <i>{this.props.experiences[this.props.selectedExp].location}</i>
+                                </div>
+                                <div>
+                                    {this.props.experiences[this.props.selectedExp].work.map(function (work, index) {
+                                        return <li key={index}>{work}</li>
+                                    })}
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../../node_modules/jquery/dist/jquery.min.js';
-// import '../../node_modules/bootstrap/dist/js/bootstrap.min.js';
 import '../../node_modules/font-awesome/css/font-awesome.min.css';
 
 class Description extends Component {
     render() {
         return (
-            <div className="content col-lg-8 col-12 offset-lg-2 text-left pt-lg-5">
+            <div className="content col-lg-8 col-12 offset-lg-2 text-left pt-lg-5" id={"description"}>
                 <div className={"container w-100"}>
                     <div className={"col-12"}>
                         Hi, I am<h1 className={"myName"}>Saurin Shah</h1>

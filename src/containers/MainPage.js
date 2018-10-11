@@ -84,11 +84,18 @@ class MainPage extends Component {
                         <Contact/>
                         <RightSideBar/>
                     </div>
+                    <i className="far fa-arrow-alt-circle-up arrow-up fa-3x d-none d-md-block" onClick={() => {this.scrollToPage("navbar")}}></i>
 
                 </div>
             </div>
 
         );
+    }
+
+    scrollToPage(page_location) {
+        var el = document.getElementById(page_location);
+        el.scrollIntoView({block: 'end', behavior: 'smooth'});
+
     }
 }
 
