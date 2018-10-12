@@ -4,14 +4,13 @@ import '../../node_modules/jquery/dist/jquery.min.js';
 import '../../node_modules/font-awesome/css/font-awesome.min.css';
 
 class Experience extends Component {
-
     render() {
         return (
             <div className="content col-lg-8 col-12 offset-lg-2 text-left mt-sm-2 mt-0" id={"exp"}>
-                <div className="row">
-                    <h1 className={"text-right myDesc"}>Experience</h1>
+                <div className="row ml-lg-0 ml-md-0 ml-2">
+                    <h1 className={"text-right pageHeading"}>Experience</h1>
                     <br/>
-                    <div className="col-12 p-5 mt-lg-5 mt-sm-1">
+                    <div className="col-12 p-lg-5 p-0 mt-lg-5 mt-sm-1 pl-lg-0 pl-md-0 pl-1 pr-lg-0 pr-md-0 pr-3">
                         <div className="row">
                             <div className="col-lg-4 col-12">
                                 <ul className={"list-group list-group-flush"}>
@@ -27,10 +26,10 @@ class Experience extends Component {
                             </div>
                             <div className="col-lg-8 col-md-8 col-12">
                                 <div className="row">
-                                    <div className={"col-6"}>
+                                    <div className={"col-lg-6 col-md-6 col-12"}>
                                         <b>{this.props.experiences[this.props.selectedExp].title}</b>
                                     </div>
-                                    <div className="col-6">
+                                    <div className="col-lg-6 col-md-6 col-12">
                                         {this.props.experiences[this.props.selectedExp].timeline}
                                     </div>
                                 </div>

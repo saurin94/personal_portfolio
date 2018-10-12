@@ -9,7 +9,7 @@ class AboutMe extends Component {
             <div className="content col-lg-8 col-12 offset-lg-2 text-left" id={"about"}>
                 <div className="row">
 
-                    <h1 className={"myDesc"}>About</h1>
+                    <h1 className={"pageHeading ml-lg-0 ml-md-0 ml-2"}>About</h1>
 
                     <div className="col-12 ml-1 mt-lg-5 mt-md-3 mt-sm-2">
                         <div className="row">

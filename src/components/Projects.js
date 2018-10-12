@@ -25,7 +25,7 @@ let projects =
             gitLink: "#"
         },
         {
-            title: 'YouTube Comment Span Detection',
+            title: 'YouTube Comment Spam Detection',
             description: 'Implemented Machine Learning technique, Naïve Bayes Classifier for detecting Spam Comments for a User specified YouTube Video',
             tech: 'Python HTML CSS NLTK YouTube API',
             gitLink: "#"
@@ -49,7 +49,7 @@ class Projects extends Component {
             <div className="content col-lg-8 col-12 offset-lg-2 text-left" id={"project"}>
                 <div className="row">
                     <div className="row">
-                        <h1 className={"myDesc ml-3"}>Projects</h1>
+                        <h1 className={"pageHeading ml-lg-0 ml-md-0 ml-4"}>Projects</h1>
                     </div>
 
                     <div className="col-12">

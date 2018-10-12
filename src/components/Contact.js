@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import '../../node_modules/jquery/dist/jquery.min.js';
-import '../../node_modules/font-awesome/css/font-awesome.min.css';
 
 class Contact extends Component {
     render() {
         return (
             <div className="content col-lg-8 col-12 offset-lg-2 text-right" id={"contact"}>
                 <div className="row">
-                    <h1 className={"col-12 myDesc"}>Contact</h1>
+                    <h1 className={"col-12 pageHeading"}>Contact</h1>
 
                     <div className="mt-5 pt-5 text-center col-12">
                         <h2>GET IN TOUCH</h2>

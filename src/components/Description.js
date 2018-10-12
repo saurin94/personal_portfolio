@@ -12,7 +12,7 @@ class Description extends Component {
                         Hi, I am<h1 className={"myName"}>Saurin Shah.</h1>
                     </div>
                     <div className="col-12">
-                        <h1 className={"myDesc"}>I am a Software Developer</h1>
+                        <h1 className={"myDesc"}>I am a Software Developer.</h1>
                     </div>
                     <div className={"col-12"}>
                         <p>

@@ -40,20 +40,16 @@ class Navbar extends Component {
                 <div className={`${classOne}`} id="navbarNavDropdown">
                     <ul className="navbar-nav flex-column flex-sm-row flex-wrap">
                         <li className="nav-item d-flex" onClick={() => this.scrollToPage("about")}>
-                            <b className="mt-2 ml-2 index">a.</b>
-                            <span className="nav-link">About<span className="sr-only">(current)</span></span>
+                            <div className="nav-link">About</div>
                         </li>
                         <li className="nav-item d-flex" onClick={() => this.scrollToPage("exp")}>
-                            <b className="mt-2 ml-2 index">b.</b>
-                            <span className="nav-link">Experience</span>
+                            <div className="nav-link">Experience</div>
                         </li>
                         <li className="nav-item d-flex" onClick={() => this.scrollToPage("project")}>
-                            <b className="mt-2 ml-2 index">c.</b>
-                            <span className="nav-link">Projects</span>
+                            <div className="nav-link">Projects</div>
                         </li>
                         <li className="nav-item d-flex" onClick={() => this.scrollToPage("contact")}>
-                            <b className="mt-2 ml-2 index">d.</b>
-                            <span className="nav-link">Contact</span>
+                            <div className="nav-link">Contact</div>
                         </li>
                     </ul>
                 </div>
