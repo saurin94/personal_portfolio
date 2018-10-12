@@ -9,9 +9,9 @@ class AboutMe extends Component {
             <div className="content col-lg-8 col-12 offset-lg-2 text-left" id={"about"}>
                 <div className="row">
 
-                    <h1>a. About</h1>
+                    <h1 className={"myDesc"}>About</h1>
 
-                    <div className="col-12 ml-1">
+                    <div className="col-12 ml-1 mt-lg-5 mt-md-3 mt-sm-2">
                         <div className="row">
                             <div className="col-lg-8 col-12">
                                 Learning and mastering the art of creating high-quality data driven softwares.
@@ -60,8 +60,8 @@ class AboutMe extends Component {
                                 </div>
                             </div>
                             <div className="col-lg-4 col-12 text-lg-right">
-                                <img width={'88%'} height={'72%'} className={'saurin-img'}
-                                     src={"https://scontent.fbed1-2.fna.fbcdn.net/v/t1.0-9/10931243_10204874864328056_224842376054944514_n.jpg?_nc_cat=109&oh=19353bfbd2c0a615617bcb1a42e6f332&oe=5C5BC101"}
+                                <img width={'120%'} height={"auto"} className={'saurin-img d-none d-lg-block'}
+                                     src={"https://scontent.fbed1-2.fna.fbcdn.net/v/t31.0-8/10457382_10203614424537849_5742836755429401387_o.jpg?_nc_cat=110&oh=b6ef0468e9e6e40a619522087b1904b0&oe=5C152842"}
                                      alt={"saurin shah img"}/>
                             </div>
                         </div>

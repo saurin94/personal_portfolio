@@ -9,16 +9,20 @@ class Experience extends Component {
         return (
             <div className="content col-lg-8 col-12 offset-lg-2 text-left mt-sm-2 mt-0" id={"exp"}>
                 <div className="row">
-                    <h1 className={"text-right"}>b. Experience</h1>
+                    <h1 className={"text-right myDesc"}>Experience</h1>
                     <br/>
-                    <div className="col-12 p-5">
+                    <div className="col-12 p-5 mt-lg-5 mt-sm-1">
                         <div className="row">
                             <div className="col-lg-4 col-12">
-                                <ul>
-                                    <li onClick={() => this.props.onSelectExperience(0)}>StubHub</li>
-                                    <li onClick={() => this.props.onSelectExperience(1)}>Teaching Assistant (A.I)</li>
-                                    <li onClick={() => this.props.onSelectExperience(2)}>Co-Founder / C.T.O</li>
-                                    <li onClick={() => this.props.onSelectExperience(3)}>Programmer and Artist</li>
+                                <ul className={"list-group list-group-flush"}>
+                                    <li className={this.props.selectedExp === 0? "list-group-item active" : "list-group-item"} onClick={() => this.props.onSelectExperience(0)}>
+                                        <i className="fas fa-caret-square-right mr-1"></i>StubHub</li>
+                                    <li className={this.props.selectedExp === 1? "list-group-item active" : "list-group-item"} onClick={() => this.props.onSelectExperience(1)}>
+                                        <i className="fas fa-caret-square-right mr-1"></i>Teaching Assistant (A.I)</li>
+                                    <li className={this.props.selectedExp === 2? "list-group-item active" : "list-group-item"} onClick={() => this.props.onSelectExperience(2)}>
+                                        <i className="fas fa-caret-square-right mr-1"></i>Co-Founder / C.T.O</li>
+                                    <li className={this.props.selectedExp === 3? "list-group-item active" : "list-group-item"} onClick={() => this.props.onSelectExperience(3)}>
+                                        <i className="fas fa-caret-square-right mr-1"></i>Programmer and Artist</li>
                                 </ul>
                             </div>
                             <div className="col-lg-8 col-md-8 col-12">

@@ -61,14 +61,16 @@ class MainPage extends Component {
         super(props);
 
         this.state = {
-           experiences : experience,
-           selectedexp : 0
-        }
-    }
+            experiences: experience,
+            selectedexp: 0
+        };
+
+    };
 
     selectExp = (expSelect) => {
-        this.setState({selectedexp : expSelect})
-    }
+        this.setState({selectedexp: expSelect});
+    };
+
 
     render() {
         return (
@@ -79,12 +81,16 @@ class MainPage extends Component {
                         <LeftSideBar/>
                         <Description/>
                         <AboutMe/>
-                        <Experience onSelectExperience={this.selectExp} selectedExp={this.state.selectedexp} experiences={experience}/>
+                        <Experience onSelectExperience={this.selectExp}
+                                    selectedExp={this.state.selectedexp}
+                                    experiences={experience}/>
                         <Projects/>
                         <Contact/>
                         <RightSideBar/>
                     </div>
-                    <i className="far fa-arrow-alt-circle-up arrow-up fa-3x d-none d-md-block" onClick={() => {this.scrollToPage("navbar")}}></i>
+                    <i className="far fa-arrow-alt-circle-up arrow-up fa-3x d-none d-md-block" onClick={() => {
+                        this.scrollToPage("navbar")
+                    }}></i>
 
                 </div>
             </div>

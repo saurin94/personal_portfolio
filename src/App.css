@@ -1,3 +1,8 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
 .App {
   /*text-align: center;*/
   /*overflow: hidden;*/
@@ -39,6 +44,7 @@
 
 .nav-item{
   color: white;
+  cursor: pointer;
 }
 #root .left-sidebar {
   position: fixed;
@@ -61,14 +67,19 @@
 }
 
 .myName{
-  font-size: 85px;
-  font-family: source-code-pro;
+  font-size: 5em;
+  font-weight: 600;
+}
+
+.myDesc{
+  font-size: 3.6em;
+  font-weight: 600;
+  color: cornflowerblue;
 }
 
 .saurin-img{
-  border: 1px solid;
-  padding: 1px;
-  box-shadow: 10px 20px 18px #888888;
+  border: 1px solid cornflowerblue;
+  box-shadow: 10px 10px cornflowerblue;
 }
 
 .row .content{
@@ -79,9 +90,23 @@
   color: darkgray;
 }
 
+.index{
+  color: cornflowerblue;
+}
+
 
 .arrow-up{
   position: fixed;
   bottom: 40px;
   right: 135px;
+}
+
+.list-group-item{
+  background-color: #2f2f2f;
+  color: white;
+}
+
+.pageHeading {
+  font-weight: 300;
+  font-size: 3em;
 }

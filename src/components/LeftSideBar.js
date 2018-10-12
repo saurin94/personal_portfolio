@@ -6,7 +6,7 @@ import '../../node_modules/font-awesome/css/font-awesome.min.css';
 class LeftSideBar extends Component {
     render() {
         return (
-            <div className="left-sidebar col-lg-1 col-md-1 ml-2 d-none d-md-block">
+            <div className="left-sidebar col-lg-1 col-md-1 ml-3 d-none d-md-block">
                 <div className="row mt-5"></div>
                 <div className="row mt-5"></div>
                 <div className="item-1 mt-1">

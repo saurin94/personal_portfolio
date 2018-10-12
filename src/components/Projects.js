@@ -49,14 +49,14 @@ class Projects extends Component {
             <div className="content col-lg-8 col-12 offset-lg-2 text-left" id={"project"}>
                 <div className="row">
                     <div className="row">
-                        <h1>c. Projects</h1>
+                        <h1 className={"myDesc ml-3"}>Projects</h1>
                     </div>
 
                     <div className="col-12">
                         <div className="row">
                             {projects.map(function (project, index) {
                                 return (
-                                    <div className="col-lg-4 col-md-3 col-12 mt-1 my-1" key={index}>
+                                    <div className="col-lg-4 col-md-3 col-12 mt-2" key={index}>
                                         <div className="card text-white bg-dark text-center p-0 h-100">
                                             <div className={"card-header p-1"}> {project.title} </div>
                                             <div className="card-body">
@@ -80,8 +80,8 @@ class Projects extends Component {
                     </div>
 
                     <div className="col-lg-4"></div>
-                    <div className={"col-lg-4 col-12 float-center text-center mt-4"}>
-                        <button className="btn btn-dark btn-lg">More Projects</button>
+                    <div className={"col-lg-4 col-12 float-center text-center mt-3"}>
+                        <button className="btn btn-dark btn-md">More Projects</button>
                     </div>
                     <div className="col-lg-4"></div>
 

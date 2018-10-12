@@ -8,17 +8,20 @@ class Contact extends Component {
         return (
             <div className="content col-lg-8 col-12 offset-lg-2 text-right" id={"contact"}>
                 <div className="row">
-                    <h1 className={"col-12"}>d. Contact</h1>
+                    <h1 className={"col-12 myDesc"}>Contact</h1>
 
                     <div className="mt-5 pt-5 text-center col-12">
                         <h2>GET IN TOUCH</h2>
                     </div>
                     <div className={"mt-3 text-center col-12"}>
-                        Looking for winter-intership (Spring 2019/Jan-May 2019) <br/>
-                        Finding Full time opportunities starting from May 2019
+                        <p>Looking for winter-intership (Spring 2019/Jan-May 2019) &<br/>
+                        Finding Full time opportunities starting from May 2019 <br/>
+                            in the field of <b>Computer Science</b></p>
                     </div>
                     <div className={"mt-5 text-center col-12"}>
-                        <button className="btn btn-dark btn-lg">Say Hello!</button>
+                        <form action="mailto:saurin.shah94@gmail.com" method="post" encType="text/plain">
+                            <button type="submit" className="btn btn-dark btn-lg">Say Hello!</button>
+                        </form>
                     </div>
                 </div>
             </div>
